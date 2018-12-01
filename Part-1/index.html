@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World Website</title>
+    <style>
+        html {
+            margin: 0;
+            background-color: #333;
+
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .input-text{
+            color: white;
+            font-weight: bold;
+        }
+
+        #name-display {
+            color: red;
+        }
+
+        p {
+            display: block;
+            width:100%;
+        }
+    </style>
+
+    <script>
+        function displayMyName() {
+            var fullName = document.getElementById('my-name').value
+            document.getElementById('name-display').innerHTML = fullName
+        }
+    </script>
+
+</head>
+<body>
+   
+    <div id="wrapper">
+        <p class="input-text">
+            Enter Your Name:&nbsp;
+        </p>
+        <p>
+        <input type="text" 
+            name="full-name"
+            id="my-name"
+            value="">
+        </p>
+        <p>
+        <input type="submit" value="Submit" onclick="displayMyName()">
+        </p>
+        <p>
+        <span id="name-display"></span></p>
+    </div>
+
+
+    <!-- 
+        Styles: CSS, 
+        Client Side Data Processing: Javscript, 
+        What the page looks like: HTML
+    -->
+
+</body>
+</html>
